@@ -13,9 +13,7 @@
   "include": ["src"],
   "references": [
     {
-      "paths": {
-        "@shared/types": ["../../packages/shared-types/dist"]
-      }
+      "path": "../../packages/shared-types"
     }
   ]
 }

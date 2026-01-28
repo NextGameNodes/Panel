@@ -1,12 +1,19 @@
 import { Controller, Get } from '@nestjs/common';
-import { ServerStatus } from '@shared/types';
+import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
-  @Get('/status')
-  getStatus() {
+  constructor(private readonly appService: AppService) {}
+
+  @Get()
+  getHello(): string {
+    return this.appService.getHello();
+  }
+  @Get('/health')
+  health() {
     return {
-      status: ServerStatus.ONLINE
+      api: 'ok',
+      uptime: process.uptime(),
     };
   }
 }
