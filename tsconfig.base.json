@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    
+    "target": "ES2021",
+    "moduleResolution": "Node",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@shared/types": ["packages/shared-types/src"]
+    },
+
+    "ignoreDeprecations": "5.0"
+  }
+}
