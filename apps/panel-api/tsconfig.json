@@ -4,8 +4,8 @@
     "module": "CommonJS",
     "target": "ES2021",
 
-    "rootDir": "./src",
-    "outDir": "./dist",
+    "rootDir": "src",
+    "outDir": "dist",
 
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
