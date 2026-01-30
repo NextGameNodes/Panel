@@ -7,6 +7,5 @@ async function bootstrap() {
   // <-- pozwala frontendowi łączyć się z backendem z innego portu
   app.enableCors();
   await app.listen(process.env.PORT ?? 3000);
-
 }
 bootstrap();
